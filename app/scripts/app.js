@@ -16,7 +16,7 @@ angular
 		$stateProvider
 			.state('home', {
 				url: '/',
-				templateUrl: 'views/instructions.html',
+				templateUrl: 'views/instructions.html'
       })
       .state('redBrick', {
         url: '/bricks/red',
@@ -33,7 +33,22 @@ angular
         templateUrl: 'views/bricks.html',
         controller: 'GreenBricksCtrl as brick'
       })
-      .state('car', {
+      .state('cart', {
+        url: '/cart',
+        templateUrl: 'views/cart.html',
+        controller: 'CartCtrl as cart'
+      })
+      .state('redBrick.cart', {
+        url: '/cart',
+        templateUrl: 'views/cart.html',
+        controller: 'CartCtrl as cart'
+      })
+      .state('blueBrick.cart', {
+        url: '/cart',
+        templateUrl: 'views/cart.html',
+        controller: 'CartCtrl as cart'
+      })
+      .state('greenBrick.cart', {
         url: '/cart',
         templateUrl: 'views/cart.html',
         controller: 'CartCtrl as cart'
